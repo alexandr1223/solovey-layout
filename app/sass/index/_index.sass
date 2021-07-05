@@ -1,0 +1,449 @@
+.first
+    margin-top: 10px
+    &__block
+        position: relative
+        height: 790px
+        width: 100%
+        background: #F5F5FA
+        border-radius: 30px
+    &__image
+        position: absolute
+        right: 130px
+        bottom: 0
+    &__info
+        display: flex
+        flex-direction: column
+        padding-top: 140px
+        margin-left: 150px
+    &__soloveyIcon
+        margin-left: 10px
+        opacity: 0
+        visibility: hidden
+        transition: .3s
+    &__subtitle
+        margin-bottom: 10px
+        font-size: 35px
+        display: flex
+        align-items: center
+        span
+            display: block
+            color: #278BFF
+            margin-left: 10px
+            cursor: pointer
+            &:hover +
+                .first__soloveyIcon
+                    opacity: 1
+                    visibility: visible
+    &__title
+        max-width: 731px
+        margin-bottom: 24px
+    &__text
+        max-width: 578px
+        line-height: 25px
+        margin-bottom: 43px
+    
+.social
+    margin-top: 84px
+    margin-bottom: 130px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__links
+        display: flex
+        align-items: center
+        span
+            margin: 0 20px
+            font-size: 18px
+        a
+            font-size: 18px
+            color: #9C9C9F
+            transition: .4s
+            &:hover
+                color: #278BFF
+    &__name
+        padding: 6px 18px
+        background: #162D47
+        border-radius: 14px
+        color: #fff
+        position: absolute
+        top: -40px
+        left: 50%
+        transform: translateX(-50%)
+        opacity: 0
+        visibility: hidden
+        transition: .3s
+        font-size: 14px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -11px
+            left: 50%
+            transform: translateX(-50%)
+            border: 6px solid transparent
+            border-top: 6px solid #162D47
+    &__items
+        display: flex
+        align-items: center
+        a
+            display: block
+            position: relative
+            transition: .3s
+            &:hover
+                path
+                    fill: #278BFF
+                .social__name
+                    opacity: 1
+                    visibility: visible
+            svg
+                path
+                    fill: #9C9C9F
+            &:not(:last-child)
+                margin-right: 37px
+
+.useful
+    margin-bottom: 130px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        height: 185px
+    &__item
+        border-radius: 30px
+        display: flex
+        align-items: center
+        padding: 35px 20px 35px 60px
+        width: 383px
+        height: 175px
+        transition: .4s
+        cursor: pointer
+        &--pink
+            background: #FFF3FC
+            img
+                width: 106px
+                display: block
+                height: auto
+                margin-right: 40px
+                transition: .4s
+            &:hover
+                transform: scale(107%)
+                img
+                    transform: scale(110%)
+        &--blue
+            background: #F3F7FF
+            img
+                width: 80px
+                height: auto
+                display: block
+                margin-right: 50px
+                transition: .4s
+            &:hover
+                transform: scale(107%)
+                img
+                    transform: scale(110%)
+        &--purple
+            background: #FAF2FC
+            img
+                width: 137px
+                height: auto
+                display: block
+                margin-right: 22px
+                transition: .4s
+            &:hover
+                transform: scale(107%)
+                img
+                    transform: scale(110%)
+        &--green
+            background: #F7FFEF
+            img
+                width: 120px
+                height: auto
+                margin-right: 18px
+                display: block
+                transition: .4s
+            &:hover
+                transform: scale(107%)
+                img
+                    transform: scale(110%)
+
+.experience
+    margin-bottom: 150px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 0 30px
+    &__item
+        display: flex
+        flex-direction: column
+        border-radius: 30px
+        background: #F5F5FA
+        cursor: pointer
+        transition: .4s
+        &:hover
+            transform: translateY(-5px)
+    &__itemTitle
+        font-family: "ProximaNovaSemiBold"
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 8px
+        display: flex
+        align-items: center
+        svg,
+        img
+            margin-right: 10px
+    &__youtube
+        path
+            fill: #FF0000
+    &__info
+        padding: 50px 50px 58px 60px
+    &__image
+        width: 100%
+        height: 223px
+        object-fit: cover
+        border-top-left-radius: 30px
+        border-top-right-radius: 30px
+    &__text
+        color: #838F9F
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 15px
+    &__read
+        font-size: 18px
+        color: #278BFF
+
+.projects
+    margin-bottom: 130px
+    &__wrapper
+        padding: 130px 150px 150px 150px
+        background: #F5F5FA
+        border-radius: 30px
+    &__title
+        margin-bottom: 0
+    &__block            
+        display: flex
+        flex-direction: column
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            left: -75px
+            width: 2px
+            height: 100%
+            background: #BEC3CE
+            z-index: 1
+    &__year
+        color: #162D47
+        font-size: 24px
+        margin-bottom: 30px
+        margin-top: 55px
+        position: relative
+        font-family: "ProximaNovaSemiBold"
+        &::before
+            content: ''
+            position: absolute
+            left: -74px
+            width: 7px
+            height: 7px
+            border-radius: 50%
+            background: #278BFF
+            top: 50%
+            transform: translate(-50%, -50%)
+            z-index: 2
+        &--this
+            color: #BEC3CE
+            &::before
+                background: #BEC3CE
+    &__info
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 30px
+    &__item
+        border-radius: 30px 
+        height: 318px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        position: relative
+        transition: .3s
+        cursor: pointer
+        &:hover
+            margin-top: -5px
+            margin-bottom: 5px
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25)
+        &--transparent
+            border: 1px solid #BEC3CE
+            &:hover
+                background: #fff
+                margin-top: -5px
+                border: 1px solid #fff
+                box-shadow: 0px 16px 42px rgba(0, 0, 0, 0.05)
+        &--small
+            background: #fff
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+    &__img
+        position: absolute
+        height: 100%
+        width: 100%
+        object-fit: cover
+        z-index: 0
+        border-radius: 30px
+        &--small
+            width: 198px
+            height: 198px
+            object-fit: cover
+            z-index: 2
+            margin-right: 63px
+            border-radius: 30px
+    &__itemTitle
+        font-size: 36px
+        line-height: 36px
+        margin-bottom: 15px
+        margin-left: 60px
+        font-family: "ProximaNovaSemiBold"
+        z-index: 2
+        color: #838F9F
+        &--white
+            color: #fff
+        &--black
+            color: #162D47
+    &__itemText
+        max-width: 283px
+        color: #162D47
+        font-size: 18px
+        line-height: 24px
+        margin-left: 60px
+        z-index: 2
+        &--white
+            color: #fff
+    &__itemBlock
+        display: flex
+        flex-direction: column
+
+.programs
+    margin-bottom: 150px
+    &__block
+        display: flex
+    &__list
+        display: grid
+        grid-template-columns: 120px 120px 120px 120px
+        grid-gap: 30px
+    &__image
+        margin-left: 150px
+        background: #F5F5FA
+        border-radius: 30px
+        height: 667px
+        width: 900px
+        position: relative
+        img
+            display: block
+            position: absolute
+            bottom: 0
+            left: 116px
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        height: 144px
+        align-items: center
+        border-radius: 30px
+        transition: .4s
+        cursor: pointer
+        img,
+        svg
+            transition: .4s
+        &:hover
+            transform: scale(110%)
+        &--cinema
+            background: #FBFBFF
+        &--octane
+            background:  #F9F9F9
+        &--redshift
+            background: #FFF7F7
+        &--corel
+            background: #F9FFF1
+        &--photoshop
+            background: #F0FCFF
+        &--premier
+            background: #FDF3FF
+        &--indesign
+            background: #FFEFF5
+        &--illustrator
+            background: #FFF1E6
+        &--audition
+            background: #EAFFFB
+        &--lightroom
+            background: #EBF1F4
+        &--aftereffects
+            background: #FBF4FF
+        &--vegas
+            background: #EFFAFF
+        &--sketch
+            background: #FFECED
+        &--mocha
+            background: #FFF5F0
+        &--3d
+            background: #EFEFEF
+        &--figma
+            background: #F7F7F7
+    &__itemTitle
+        font-size: 14px
+        text-align: center
+        font-family: "ProximaNovaRegular"
+
+.map
+    margin-bottom: 160px
+    &__block    
+        background: #F5F5FA
+        border-radius: 30px 
+        padding-top: 134px
+    &__title
+        margin-left: 150px
+    &__info
+        margin-left: 150px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 0 120px
+        margin-right: 150px
+        margin-bottom: 140px
+    &__text
+        font-size: 18px
+        line-height: 24px
+    iframe
+        border-bottom-right-radius: 30px
+        border-bottom-left-radius: 30px
+
+.connection
+    margin-bottom: 150px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        margin-bottom: 0
+    &__buttons
+        display: flex
+        margin-left: 120px
+    &__btn
+        box-shadow: none
+        cursor: pointer
+        &--telegramm
+            margin-right: 30px
+        &--whatsapp
+            background: #35C436
+        &:hover
+            box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.15)
+    &__links
+        display: flex
+        align-items: center
+        span
+            margin: 0 20px
+            font-size: 24px
+        a
+            font-size: 24px
+            color: #9C9C9F
+            transition: .4s
+            &:hover
+                color: #278BFF

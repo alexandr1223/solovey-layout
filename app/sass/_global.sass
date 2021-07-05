@@ -1,0 +1,167 @@
+html,
+body 
+	height: 100%
+	background: #fff
+	font-family: "ProximaNovaRegular"
+	color: #162D47
+
+.wrapper 
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main 
+	word-wrap: break-word
+	flex: 1 0 auto
+
+.footer 
+	flex: 0 0 auto
+
+.container
+  max-width: 1620px
+  margin: 0 auto
+  padding: 0
+
+.title
+	word-wrap: break-word
+	font-size: 38px
+	line-height: 46px
+	margin-bottom: 35px
+	font-family: "ProximaNovaBold"
+	
+.bigTitle
+	font-family: "ProximaNovaExtraBold"
+	font-size: 80px
+	line-height: 82px
+
+.text
+	font-size: 18px
+	font-family: "ProximaNovaRegular"
+	color: #162D47
+
+.subtitle
+	word-wrap: break-word
+
+.btn
+	padding: 18px 35px
+	background: #278BFF
+	display: flex
+	font-size: 18px
+	align-items: center
+	width: max-content
+	border-radius: 27.5px
+	color: #fff
+	box-shadow: 0px 17px 31px rgba(27, 101, 186, 0.25)
+	transition: .4s
+	cursor: pointer
+	svg
+		margin-right: 10px
+		fill: #fff
+
+
+input
+	cursor: pointer
+	&::placeholder,
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&::-ms-input-placeholder,
+		color: #fff
+
+.header
+	margin: 44px 0
+	&__nav
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		align-items: center
+	&__circle
+		width: 55px
+		height: 55px
+		margin-right: 23px
+	&__menu
+		display: flex
+		align-items: center
+		li
+			a
+				font-size: 20px
+				color: #162D47
+				transition: .3s
+				&:hover
+					color: #278BFF
+			&:not(:last-child)
+				a
+					margin-right: 36px
+
+.footer
+	margin-bottom: 150px
+	&__name
+		padding: 6px 18px
+		background: #162D47
+		border-radius: 14px
+		color: #fff
+		position: absolute
+		top: -40px
+		left: 50%
+		transform: translateX(-50%)
+		opacity: 0
+		visibility: hidden
+		transition: .3s
+		font-size: 14px
+		&::after
+			content: ''
+			position: absolute
+			bottom: -11px
+			left: 50%
+			transform: translateX(-50%)
+			border: 6px solid transparent
+			border-top: 6px solid #162D47
+	&__items
+		display: flex
+		justify-content: space-between
+	&__link
+		display: block
+		position: relative
+		transition: .3s
+		width: 97px
+		height: 97px
+		border-radius: 30px
+		&:hover
+			.footer__name
+				opacity: 1
+				visibility: visible
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&:not(:last-child)
+			margin-right: 37px
+		&--youtube
+			background: #FFF8F8
+		&--vk
+			background: #F1F8FF
+		&--inst
+			background: linear-gradient(222.72deg, rgba(154, 60, 156, 0.05) 3.71%, rgba(210, 71, 101, 0.05) 51.46%, rgba(246, 211, 119, 0.05) 96.31%)
+		&--facebook
+			background: #F4F9FF
+		&--twitter
+			background: #F4FBFF
+		&--od
+			background: #FFF4EC
+		&--tiktok
+			background: #EFF8F9
+		&--skype
+			background: #EEFAFF
+		&--pinterest
+			background: #FFF2F4
+		&--wiki
+			background: #F1F1F1
+		&--smile
+			background: #EDF6FF
+		&--romb
+			background: #FBFBFB
+		&--t
+			background: #F3F3F3
+		
