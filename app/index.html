@@ -14,27 +14,39 @@
 	<header class="header">
 		<div class="container">
 			<nav class="header__nav">
-				<div class="header__logo">
+				<a href="index.html" class="header__logo">
 					<img class="header__circle" src="img/svg/solovey-logo.png" alt="">
 					<img class="img-svg header__solovey" src="img/svg/solovey-svg.svg" alt="">
+				</a>
+				<div class="header__mobile">
+					<ul class="header__menu">
+						<li>
+							<a href="#experience">Делюсь опытом</a>
+						</li>
+						<li>
+							<a href="#projects">Мои проекты</a>
+						</li>
+						<li>
+							<a href="#about">Обо мне</a>
+						</li>
+						<li>
+							<a href="#programs">Опыт работы</a>
+						</li>
+						<li>
+							<a href="#contact">Контакты</a>
+						</li>
+						<div class="header__mobile--social">
+							<a href="#" class="header__mobile--telegram"><img src="img/svg/telegram.svg" alt="" class="img-svg"></a>
+							<a href="#" class="header__mobile--whatsapp"><img src="img/svg/whatsup.svg" alt="" class="img-svg"></a>
+						</div>
+					</ul>
+					<div class="header__close">
+						<img src="img/svg/cancel.svg" class="img-svg" alt="">
+					</div>
 				</div>
-				<ul class="header__menu">
-					<li>
-						<a href="#">Делюсь опытом</a>
-					</li>
-					<li>
-						<a href="#">Мои проекты</a>
-					</li>
-					<li>
-						<a href="#">Обо мне</a>
-					</li>
-					<li>
-						<a href="#">Опыт работы</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
+				<div class="header__humburger">
+					<img src="img/svg/humburger.svg" class="img-svg">
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -59,10 +71,16 @@
 								Реализовал более 350 проектов для крупнейших компаний. <br>
 								Опыт работы с видео более 10 лет.
 							</div>
-							<div class="first__btn btn">
+							<a href='#' class="first__btn btn">
 								<img src="img/svg/telegram.svg" alt="" class="img-svg">
 								Написать мне
-							</div>
+							</a>
+							<!-- <button class="button">
+								<svg viewBox="0 0 132 48" preserveAspectRatio="none">
+									<path d="M4,3 C24.6666667,3 45.3333333,3 66,3 C86.6666667,3 107.333333,3 128,3 C129.104569,3 130,3.8954305 130,5 C130,11.3333333 130,17.6666667 130,24 C130,30.3333333 130,36.6666667 130,43 C130,44.1045695 129.104569,45 128,45 C107.333333,45 86.6666667,45 66,45 C45.3333333,45 24.6666667,45 4,45 C2.8954305,45 2,44.1045695 2,43 C2,36.6666667 2,30.3333333 2,24 C2,17.6666667 2,11.3333333 2,5 C2,3.8954305 2.8954305,3 4,3 Z" />
+								</svg>
+								<span>Normal</span>
+							</button> -->
 						</div>
 						<div class="first__image">
 							<img src="img/first-img.png" alt="">
@@ -118,7 +136,7 @@
 							</a>
 							<a href="#">
 								<div class="social__name">
-									
+									YouTube
 								</div>
 								<img src="img/svg/social7.svg" class="img-svg" alt="">
 							</a>
@@ -142,7 +160,7 @@
 							</a>
 							<a href="#">
 								<div class="social__name">
-									
+									YouTube
 								</div>
 								<img src="img/svg/social11.svg" class="img-svg" alt="">
 							</a>
@@ -210,7 +228,7 @@
 				</div>
 			</div>
 
-			<div class="experience">
+			<div class="experience" id="experience">
 				<div class="container">
 					<h2 class="experience__title title">
 						Делюсь опытом
@@ -282,7 +300,7 @@
 				</div>
 			</div>
 
-			<div class="projects">
+			<div class="projects" id="projects">
 				<div class="container">
 					<div class="projects__wrapper">
 						<h2 class="projects__title title">
@@ -293,33 +311,83 @@
 								2021
 							</div>
 							<div class="projects__info">
-								<div class="projects__item projects__item--transparent">
+								<div class="projects__item projects__item--transparent"
+								data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<h3 class="projects__itemTitle">
 										Cоловей Media
+									</h3>
+									<div class="projects__itemText">
+										Комплексное решение маркетинговых задач, полный цикл производства продукта
+									</div>
+								</div>
+								<div class="projects__item projects__item--transparent"
+								data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<h3 class="projects__itemTitle">
+										От мамы <br>
+										с папой
 									</h3>
 									<div class="projects__itemText">
 										Создание и ведение группы известного путешественника Виталия Сундакова.
 									</div>
 								</div>
-								<div class="projects__item projects__item--transparent">
+								<div class="projects__item projects__item--transparent"
+								data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<h3 class="projects__itemTitle">
-										Cоловей Media
+										Cоловей 3D
 									</h3>
 									<div class="projects__itemText">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
+										Создание видеороликов в 3D
 									</div>
 								</div>
-								<div class="projects__item projects__item--transparent">
+								<div class="projects__item projects__item--transparent"
+								data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<h3 class="projects__itemTitle">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
-									</div>
-								</div>
-								<div class="projects__item projects__item--transparent">
-									<h3 class="projects__itemTitle">
-										Cоловей Media
+										Cоловей CEO
 									</h3>
 									<div class="projects__itemText">
 										Создание и ведение группы известного путешественника Виталия Сундакова.
@@ -330,39 +398,93 @@
 								2020
 							</div>
 							<div class="projects__info">
-								<div class="projects__item">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<img src="img/projects1.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
-									</div>
-								</div>
-								<div class="projects__item">
-									<img src="img/projects2.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
-									</div>
-								</div>
-								<div class="projects__item projects__item--small">
-									<div class="projects__itemBlock">
-										<h3 class="projects__itemTitle projects__itemTitle--black">
-											Cоловей Media
+									<div class="projects__content projects__content--purple">
+										<h3 class="projects__itemTitle projects__itemTitle--white">
+											Cоловей
+											Creative
 										</h3>
-										<div class="projects__itemText projects__itemText--black">
-											Создание и ведение группы известного путешественника Виталия Сундакова.
+										<div class="projects__itemText projects__itemText--white">
+											Креативное агентство
 										</div>
 									</div>
-									<img src="img/svg/blog-svg.svg" class="projects__img--small" alt="">
 								</div>
-								<div class="projects__item projects__item--small">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<img src="img/projects2.jpg" class="projects__img" alt="">
+									<div class="projects__content projects__content--pink">
+										<h3 class="projects__itemTitle projects__itemTitle--white">
+											Cоловей
+											Branding
+										</h3>
+										<div class="projects__itemText projects__itemText--white">
+											Брендинговое агентство
+										</div>
+									</div>
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<div class="projects__itemBlock">
 										<h3 class="projects__itemTitle projects__itemTitle--black">
-											Cоловей Media
+											Cоловей Blog
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Делимся опытом,
+											рассказываем истории 
+											про наши кейсы 
+											обсуждаем новости
+											индустрии.
+										</div>
+									</div>
+									<img src="img/svg/solovey-project.svg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Video
 										</h3>
 										<div class="projects__itemText projects__itemText--black">
 											Создание и ведение группы известного путешественника Виталия Сундакова.
@@ -370,41 +492,532 @@
 									</div>
 									<img src="img/projects2.jpg" class="projects__img--small" alt="">
 								</div>
-								<div class="projects__item">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<img src="img/projects3.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
+									<div class="projects__content projects__content--green">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Cоловей
+											Promotion
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Продвижение видеороликов 
+											в интернете, соцсетях,
+											digital-экранах и на 
+											телевидении.
+										</div>
 									</div>
 								</div>
-								<div class="projects__item">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<img src="img/projects4.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
+									<div class="projects__content projects__content--blue">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Cоловей Web
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Дизайн, верстка и
+											программирование
+											веб-сайтов любой 
+											сложности – от
+											лендинга
+											до
+											интернет-магазина.
+										</div>
 									</div>
 								</div>
-								<div class="projects__item">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<img src="img/projects5.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
+									<div class="projects__content projects__content--coral">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Cоловей Audio
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание аудиороликов
+											любой сложности.
+											Разработка текстов,
+											запись дикторами, подбор
+											музыки, добавление звуков,
+											переводы на разных языках.
+										</div>
 									</div>
 								</div>
-								<div class="projects__item">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
 									<img src="img/projects6.jpg" class="projects__img" alt="">
-									<h3 class="projects__itemTitle projects__itemTitle--white">
-										Cоловей Media
-									</h3>
-									<div class="projects__itemText projects__itemText--white">
-										Создание и ведение группы известного путешественника Виталия Сундакова.
+									<div class="projects__content projects__content--red">
+										<h3 class="projects__itemTitle projects__itemTitle--white">
+											Cоловей <br>
+											Barter studio
+										</h3>
+										<div class="projects__itemText projects__itemText--white">
+											Работа по бартеру с
+											компаниями. Создание
+											роликов до 20 секунд
+											в обмен на релевантные
+											для студии предложения.
+										</div>
 									</div>
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Канал про
+											съемку еды
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2019
+							</div>
+							<div class="projects__info">
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<img src="img/projects1.jpg" class="projects__img" alt="">
+									<div class="projects__content">
+										<h3 class="projects__itemTitle projects__itemTitle--white">
+											Cоловей Production
+										</h3>
+										<div class="projects__itemText projects__itemText--white">
+											Изготовление 
+											профессиональных 
+											анимационных 
+											видеороликов и 
+											эксплейнеров. 
+										</div>
+									</div>
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Команда
+											Соловья: как заработать на Motion-design
+										</h3>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<img src="img/projects2.jpg" class="projects__img" alt="">
+									<div class="projects__content">
+										<h3 class="projects__itemTitle projects__itemTitle--white">
+											Cоловей Express
+										</h3>
+										<div class="projects__itemText projects__itemText--white">
+											Изготовление простых
+											минутных видеороликов 
+											для TV и LED-экранов,
+											ресайзы.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2018
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Курс по AeКурс по Ae
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2017
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Канал
+											сундакова – ответы
+											вопросы
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											ЗдавБудь! –
+											канал
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2016
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Ежедневники
+											вторая версия
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2015
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Текущий
+											момент
+											Сундаков
+											группа
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2014
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Е-дела.ру
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											BeeLADY
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2013
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											VideoСard – видеоткрытка 
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Пора  <br>
+											менять <br>
+											вкусы - <br>
+											марафон <br>
+											с Юрой
+										</h3>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Вегитерикс
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2008
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Начало Ежедневники
+											первая версия
+										</h3>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
+								</div>
+							</div>
+
+							<div class="projects__year">
+								2006
+							</div>
+							<div class="projects__info">
+								<div class="projects__item projects__item--small" data-title="Заголовок с карточки" data-text="описание карточки" data-list1="1" data-list2="2" data-list3="3" data-list4="4" data-list4="5" data-result="Текст результата" data-link="необходимая ссылка"
+								data-mobile="img/modal-img.jpg"
+								data-for1="img/modal-img.jpg"
+								data-for2="img/modal-img.jpg"
+								data-for3="img/modal-img.jpg"
+								data-for4="img/modal-img.jpg"
+								data-for5="img/modal-img.jpg"
+								data-nav1="img/modal-small.jpg"
+								data-nav2="img/modal-small.jpg"
+								data-nav3="img/modal-small.jpg"
+								data-nav4="img/modal-small.jpg"
+								data-nav5="img/modal-small.jpg">
+									<div class="projects__itemBlock">
+										<h3 class="projects__itemTitle projects__itemTitle--black">
+											Роспись
+											джинсов 
+										</h3>
+										<div class="projects__itemText projects__itemText--black">
+											Создание и ведение группы известного путешественника Виталия Сундакова.
+										</div>
+									</div>
+									<img src="img/projects2.jpg" class="projects__img--small" alt="">
 								</div>
 							</div>
 						</div>
@@ -412,7 +1025,7 @@
 				</div>
 			</div>
 
-			<div class="programs">
+			<div class="programs" id="programs">
 				<div class="container">
 					<h2 class="programs__title title">
 						Владею программами
@@ -523,7 +1136,7 @@
 				</div>
 			</div>
 
-			<div class="map">
+			<div class="map" id="about">
 				<div class="container">
 					<div class="map__block">
 						<h2 class="map__title title">
@@ -543,21 +1156,25 @@
 				</div>
 			</div>
 
-			<div class="connection">
+			<div class="connection" id="contact">
 				<div class="container">
 					<div class="connection__block">
 						<h2 class="connection__title title">
 							Постоянно на связи
 						</h2>
 						<div class="connection__buttons">
-							<div class="connection__btn connection__btn--telegramm btn">
-								<img src="img/svg/telegram.svg" alt="" class="img-svg">
-								Написать в Telegram
-							</div>
-							<div class="connection__btn connection__btn--whatsapp btn">
-								<img src="img/svg/whatsup.svg" alt="" class="img-svg">
-								Написать в WhatsApp
-							</div>
+							<a href="" class="connection__btn connection__btn--telegramm btn">
+								<div class="btn-info">
+									<img src="img/svg/telegram.svg" alt="" class="img-svg">
+									Написать в Telegram
+								</div>
+							</a>
+							<a href="" class="connection__btn connection__btn--whatsapp btn">
+								<div class="btn-info">
+									<img src="img/svg/whatsup.svg" alt="" class="img-svg">
+									Написать в WhatsApp
+								</div>
+							</a>
 						</div>
 						<div class="connection__links">
 							<a href="tel:89537778897">8 (953) 777-88-97</a>
@@ -565,6 +1182,56 @@
 							<a href="mailto:igor@solovey.ru">igor@solovey.ru</a>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+				<div class="modal__block">
+					<div class="modal__close">
+						<img src="img/svg/cancel.svg" alt="" class="img-svg">
+					</div>
+					<div class="modal__mobile">
+						<img src="img/modal-img.jpg" alt="">
+					</div>
+					<div class="modal__image">
+						<div class="modal__for">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+						</div>
+						<div class="modal__nav">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+						</div>
+					</div>
+					<div class="modal__info">
+						<h2 class="modal__title title">
+							Группа Виталия Сундакова
+						</h2>
+						<p class="modal__text modal__descr">
+							Создание и ведение группы известного путешественника Виталия Сундакова. За 3 года численность участников сообщества достигла 50 000 человек. Статистика по группе была большой:
+						</p>
+						<ul class="modal__list">
+						</ul>
+						<div class="modal__subtitle">
+							Результат:
+						</div>
+						<p class="modal__text modal__result">
+							В данный момент проект ведется другими администраторами, статистика стала похуже. Численность группы сейчас составляет более 70 000 человек. Группа была очень живая и интересная, при том, что довольно узкопрофильная! На этом проекте, удалось раскрутить канал с нарезкой вопрос-ответ и довести до 1,5 млн просмотров роликов. 
+						</p>
+						<a href="vk.com/vitaliy_sundakov" class="modal__link">vk.com/vitaliy_sundakov</a>
+					</div>
+					<a href='' class="modal__mobileBtn btn">
+						<div class="btn-info">
+							<img src="img/svg/telegram.svg" alt="" class="img-svg">
+							Написать мне
+						</div>
+					</a>
 				</div>
 			</div>
 
@@ -604,7 +1271,7 @@
 					</a>
 					<a href="#" class="footer__link footer__link--smile">
 						<div class="footer__name footer__name">
-							
+							YouTube
 						</div>
 						<img src="img/svg/footer6.png" class="img-svg" alt="">
 					</a>
@@ -628,13 +1295,13 @@
 					</a>
 					<a href="#" class="footer__link footer__link--romb">
 						<div class="footer__name">
-							
+							YouTube
 						</div>
 						<img src="img/svg/footer10.png" class="img-svg" alt="">
 					</a>
 					<a href="#" class="footer__link footer__link--t">
 						<div class="footer__name footer__name">
-							
+							YouTube
 						</div>
 						<img src="img/svg/footer11.png" class="img-svg" alt="">
 					</a>

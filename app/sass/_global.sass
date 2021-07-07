@@ -58,6 +58,51 @@ body
 		margin-right: 10px
 		fill: #fff
 
+.button
+    --color: #F6F8FF
+    --background: #58607F
+    --background-hover: #535A79
+    display: flex
+    align-items: center
+    outline: none
+    cursor: pointer
+    position: relative
+    border: 0
+    padding: 8px 36px
+    line-height: 26px
+    font-family: inherit
+    font-weight: 600
+    font-size: 14px
+    background: none
+    color: var(--color)
+    -webkit-tap-highlight-color: transparent
+    svg
+        display: block
+        position: absolute
+        left: 0
+        width: 100%
+        height: 48px
+        transform: translateZ(0)
+        stroke: var(--stroke, none)
+        stroke-width: var(--stroke-width, 0)
+        fill: var(--fill, var(--background))
+        transition: fill .25s linear
+    
+    span
+        display: inline-block
+        position: relative
+        z-index: 1
+    
+    &:hover
+        --fill: var(--background-hover)
+    
+    &.border
+        --stroke: #D1D6EE
+        --stroke-width: 1px
+        --color: #404660
+        --background: #fff
+        --background-hover: #FAFBFF
+
 
 input
 	cursor: pointer
@@ -68,7 +113,20 @@ input
 		color: #fff
 
 .header
-	margin: 44px 0
+	padding: 44px 0
+	position: fixed
+	top: 0
+	transition: .4s
+	width: 100%
+	z-index: 21
+	background: #fff
+	&__humburger
+		display: none
+	&__mobile
+		&--social
+			display: none
+	&__close
+		display: none
 	&__nav
 		display: flex
 		justify-content: space-between
